@@ -336,7 +336,7 @@ class DiffusionDet(nn.Module):
 
     def prepare_diffusion_repeat(self, gt_boxes):
         """
-        :param gt_boxes: (cx, cy, w, h), normalized
+        :param gt_boxes: (cx, cy, w, h, ang), normalized
         :param num_proposals:
         """
         t = torch.randint(0, self.num_timesteps, (1,), device=self.device).long()

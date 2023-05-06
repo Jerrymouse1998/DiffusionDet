@@ -90,3 +90,7 @@ to understand its behavior. Some common arguments are:
 * To run __on a video__, replace `--input files` with `--video-input video.mp4`.
 * To run __on cpu__, add `MODEL.DEVICE cpu` after `--opts`.
 * To save outputs to a directory (for images) or a file (for webcam or video), use `--output`.
+
+
+
+To rebuild detectron2 that's built from a local clone, use rm -rf build/ **/*.so to clean the old build first. You often need to rebuild detectron2 after reinstalling PyTorch.
